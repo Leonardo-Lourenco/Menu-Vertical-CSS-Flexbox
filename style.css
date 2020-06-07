@@ -1,0 +1,88 @@
+body
+{
+	font-family: century gothics;
+	font-weight: bold;
+	background-image: url(1.jpg);
+	background-repeat: repeat;
+}
+
+.conteudo
+{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display:-ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	margin: 15% auto;
+	width: 50%;
+
+}
+
+label
+{
+	width: 25%;
+	color: #fff;
+	background-color: red;
+	transition: all .2s;
+	border: none;
+	text-align: center;
+	padding: 12px;
+	margin-right: 0;
+	align-self: flex-end;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.box
+{
+	width: 60%;
+	min-height: 150px;
+	margin: 10px;
+	background-color: #3F7FBF;
+	transition: all .2s;
+	margin-top: -200px;
+	padding: 30px;
+	display: none;
+	color: #fff;
+}
+
+.box h2
+{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+input[type="radio"]
+{
+	visibility: hidden;
+}
+
+input[type="radio"]:checked + label
+{
+	background-color: #3F7FBF; 
+	color: #fff;
+}
+
+
+#servicos:checked ~ .servicos,
+#servicos-dois:checked ~ .servicos-dois,
+#servicos-tres:checked ~ .servicos-tres
+{
+	display: block;
+}
+
+h2
+{
+	margin:0;
+}
+
+ul
+{
+	padding: 0 15px;
+}
+
+li
+{
+	padding: 10px;
+}
